@@ -1,0 +1,10 @@
+ssh-keygen -t rsa -b 4096 -C "vishalbairwapyd@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa 
+cat ~/.ssh/id_rsa.pub
+    (then copy the content)
+
+
+copy and paste the ssh key on Github/GitLab
